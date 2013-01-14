@@ -10,20 +10,20 @@ using TAlex.PADGenerator.Models;
 
 namespace TAlex.PADGenerator
 {
-    public class PADGenerator : IPADGenerator
+    public class BasicPADGenerator : IPADGenerator
     {
         private XmlSerializerNamespaces _namespaces;
         private XmlWriterSettings _xmlSettings;
 
 
-        public PADGenerator()
+        public BasicPADGenerator()
         {
             _namespaces = new XmlSerializerNamespaces();
             _namespaces.Add(String.Empty, String.Empty);
             
             _xmlSettings = new XmlWriterSettings
             {
-                OmitXmlDeclaration = true,
+                OmitXmlDeclaration = false,
                 NewLineOnAttributes = true,
                 Indent = true
             };

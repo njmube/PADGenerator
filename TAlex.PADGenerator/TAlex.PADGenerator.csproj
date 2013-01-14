@@ -45,7 +45,7 @@
     <Compile Include="Models\CompanyInfo.cs" />
     <Compile Include="Models\PADRoot.cs" />
     <Compile Include="Models\VersionInfo.cs" />
-    <Compile Include="PADGenerator.cs" />
+    <Compile Include="BasicPADGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

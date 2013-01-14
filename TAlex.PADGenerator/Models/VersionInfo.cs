@@ -35,7 +35,7 @@ namespace TAlex.PADGenerator.Models
         public VersionInfo()
         {
             Version = "4.0";
-            Editor = String.Format("TAlex PAD Generator {0}", Assembly.GetEntryAssembly().GetName().Version);
+            Editor = String.Format("TAlex PAD Generator {0}", Assembly.GetExecutingAssembly().GetName().Version);
             Info = "Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://pad.asp-software.org";
         }
     }
