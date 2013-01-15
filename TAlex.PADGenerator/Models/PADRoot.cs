@@ -11,14 +11,14 @@ namespace TAlex.PADGenerator.Models
     public class PADRoot
     {
         [XmlElement(ElementName = "MASTER_PAD_VERSION_INFO")]
-        public VersionInfo PADVersionInfo { get; set; }
+        public VersionInfo VersionInfo { get; set; }
 
         [XmlElement(ElementName = "Company_Info")]
         public CompanyInfo CompanyInfo { get; set; }
 
         public PADRoot()
         {
-            PADVersionInfo = new VersionInfo();
+            VersionInfo = new VersionInfo();
             CompanyInfo = new CompanyInfo();
         }
     }

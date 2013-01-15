@@ -39,8 +39,43 @@ namespace TAlex.PADGenerator.Models
         [StringLength(40, MinimumLength = 2)]
         public string City { get; set; }
 
+        /// <summary>
+        /// Gets or sets the state, province or region.
+        /// </summary>
+        [XmlElement(ElementName = "State_Province")]
+        [RegularExpression(@"^[a-zA-Z\xbc-\xff0-9 .\-,\/]*$")]
+        [StringLength(30, MinimumLength = 0)]
+        public string State { get; set; }
 
+        /// <summary>
+        /// Gets or sets the ZIP or Postal code.
+        /// </summary>
+        [XmlElement(ElementName = "Zip_Postal_Code")]
+        [RegularExpression(@"^[^<\x09]*$")]
+        [StringLength(20, MinimumLength = 0)]
+        public string Zip { get; set; }
 
+        /// <summary>
+        /// Gets or sets the country.
+        /// </summary>
+        [XmlElement(ElementName = "Country")]
+        [RegularExpression(@"^[a-z A-Z\xbc-\xff\x27-]*$")]
+        [StringLength(40, MinimumLength = 2)]
+        public string Country { get; set; }
+
+        /// <summary>
+        /// Gets or sets the company website URL.
+        /// </summary>
+        [XmlElement(ElementName = "Company_WebSite_URL")]
+        [RegularExpression(@"^http:\/\/.*$")]
+        [StringLength(120, MinimumLength = 2)]
+        public string WebSiteUrl { get; set; }
+
+        [XmlElement(ElementName = "Contact_Info")]
+        public ContactInfo ContactInfo { get; set; }
+
+        [XmlElement(ElementName = "Support_Info")]
+        public SupportInfo SupportInfo { get; set; }
 
         public CompanyInfo()
         {
@@ -48,6 +83,13 @@ namespace TAlex.PADGenerator.Models
             FirstAddress = String.Empty;
             SecondAddress = String.Empty;
             City = String.Empty;
+            State = String.Empty;
+            Zip = String.Empty;
+            Country = String.Empty;
+            WebSiteUrl = String.Empty;
+
+            ContactInfo = new ContactInfo();
+            SupportInfo = new SupportInfo();
         }
     }
 }
