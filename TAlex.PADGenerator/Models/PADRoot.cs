@@ -16,10 +16,18 @@ namespace TAlex.PADGenerator.Models
         [XmlElement(ElementName = "Company_Info")]
         public CompanyInfo CompanyInfo { get; set; }
 
+        [XmlElement(ElementName = "Program_Info")]
+        public ProgramInfo ProgramInfo { get; set; }
+
+        [XmlElement(ElementName = "Program_Descriptions")]
+        public ProgramDescriptions ProgramDescriptions { get; set; }
+
         public PADRoot()
         {
             VersionInfo = new VersionInfo();
             CompanyInfo = new CompanyInfo();
+            ProgramInfo = new ProgramInfo();
+            ProgramDescriptions = new ProgramDescriptions();
         }
     }
 }
