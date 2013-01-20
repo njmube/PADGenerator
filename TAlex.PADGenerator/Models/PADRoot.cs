@@ -20,12 +20,21 @@ namespace TAlex.PADGenerator.Models
         [XmlElement(ElementName = "Program_Descriptions")]
         public ProgramDescriptions ProgramDescriptions { get; set; }
 
+        [XmlElement(ElementName = "Web_Info")]
+        public WebInfo WebInfo { get; set; }
+
+        [XmlElement(ElementName = "Permissions")]
+        public Permissions Permissions { get; set; }
+
+
         public PADRoot()
         {
             VersionInfo = new VersionInfo();
             CompanyInfo = new CompanyInfo();
             ProgramInfo = new ProgramInfo();
             ProgramDescriptions = new ProgramDescriptions();
+            WebInfo = new WebInfo();
+            Permissions = new Permissions();
         }
     }
 }
