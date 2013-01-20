@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
+using TAlex.PADGenerator.Helpers;
 using TAlex.PADGenerator.Models;
 
 namespace TAlex.PADGenerator
@@ -35,8 +36,12 @@ namespace TAlex.PADGenerator
         public void Generate(PADRoot root, Stream output)
         {
             // Validate
-            ValidationContext validationContext = new ValidationContext(root, null, null);
-            Validator.ValidateObject(root, validationContext, true);
+            List<ValidationResult> results = new List<ValidationResult>();
+            if (!DataAnnotationsValidator.TryValidateObjectRecursive(root, results))
+            {
+                ValidationResult result = results.First();
+                throw new ValidationException(result, null, null);
+            }
 
             XmlSerializer serializer = new XmlSerializer(typeof(PADRoot));
 

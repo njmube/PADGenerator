@@ -26,6 +26,8 @@ namespace TAlex.PADGenerator.Test
             //arrange
             PADRoot root = new PADRoot();
             root.ProgramDescriptions.Add("English", new ProgramDescription());
+            root.ProgramInfo.Version = "adsf adksfj askdlf jaskdf jasdkf jasldkf jaslkdfj aslkd fjasldkfj alskdfj asdkjf aksldjf asd";
+
             MemoryStream stream = new MemoryStream();
 
             //action

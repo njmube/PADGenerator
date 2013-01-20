@@ -98,7 +98,7 @@ namespace TAlex.PADGenerator.Models
         /// Gets or sets the type of install support the program has.
         /// </summary>
         [XmlElement(ElementName = "Program_Install_Support")]
-        [RegularExpression(@"^(Install and Uninstall|Install Only|No Install")]
+        [RegularExpression(@"^(Install and Uninstall|Install Only|No Install Support|Uninstall Only)$")]
         public string InstallSupport { get; set; }
 
         /// <summary>
