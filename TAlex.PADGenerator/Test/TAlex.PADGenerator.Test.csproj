@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E12C3C81-3449-4E45-A6F1-84CB29D07A13}</ProjectGuid>
+    <ProjectGuid>{326D73D4-6D78-4BBA-93D8-33CB90F29EEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TAlex.PADGenerator</RootNamespace>
-    <AssemblyName>TAlex.PADGenerator</AssemblyName>
+    <RootNamespace>TAlex.PADGenerator.Test</RootNamespace>
+    <AssemblyName>TAlex.PADGenerator.Test</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -28,11 +28,15 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\TAlex.PADGenerator.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentAssertions">
+      <HintPath>..\..\packages\FluentAssertions.2.0.0.1\lib\net40\FluentAssertions.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,26 +45,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPADGenerator.cs" />
-    <Compile Include="Models\CompanyInfo.cs" />
-    <Compile Include="Models\ContactInfo.cs" />
-    <Compile Include="Models\ExpireInfo.cs" />
-    <Compile Include="Models\FileInfo.cs" />
-    <Compile Include="Models\PADRoot.cs" />
-    <Compile Include="Models\Patterns.cs" />
-    <Compile Include="Models\ProgramDescription.cs" />
-    <Compile Include="Models\ProgramDescriptions.cs" />
-    <Compile Include="Models\ProgramInfo.cs" />
-    <Compile Include="Models\SupportInfo.cs" />
-    <Compile Include="Models\VersionInfo.cs" />
-    <Compile Include="BasicPADGenerator.cs" />
+    <Compile Include="BasicPADGeneratorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TAlex.PADGenerator.csproj">
+      <Project>{e12c3c81-3449-4e45-a6f1-84cb29d07a13}</Project>
+      <Name>TAlex.PADGenerator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>$(SolutionDir).nuget\nuget.exe pack "$(ProjectPath)" -Prop Configuration=$(ConfigurationName)</PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

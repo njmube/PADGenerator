@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAlex.PADGenerator", "TAlex.PADGenerator\TAlex.PADGenerator.csproj", "{E12C3C81-3449-4E45-A6F1-84CB29D07A13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAlex.PADGenerator.Test", "TAlex.PADGenerator\Test\TAlex.PADGenerator.Test.csproj", "{326D73D4-6D78-4BBA-93D8-33CB90F29EEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{E12C3C81-3449-4E45-A6F1-84CB29D07A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E12C3C81-3449-4E45-A6F1-84CB29D07A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E12C3C81-3449-4E45-A6F1-84CB29D07A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{326D73D4-6D78-4BBA-93D8-33CB90F29EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326D73D4-6D78-4BBA-93D8-33CB90F29EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326D73D4-6D78-4BBA-93D8-33CB90F29EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326D73D4-6D78-4BBA-93D8-33CB90F29EEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TAlex.PADGenerator")]
-[assembly: AssemblyDescription("PAD File Generator Library")]
+[assembly: AssemblyTitle("PADGenerator Unit Tests")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("T-Alex Software")]
-[assembly: AssemblyProduct("TAlex.PADGenerator")]
-[assembly: AssemblyCopyright("Copyright © 2013 T-Alex Software")]
+[assembly: AssemblyProduct("PADGenerator Unit Tests")]
+[assembly: AssemblyCopyright("Copyright ©  2013 T-Alex Software")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("dc3864cb-aa6e-44f6-9b09-f2646d474c2e")]
+[assembly: Guid("deb6e519-85f6-44cc-ad80-2e8f68415449")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.3.0.0")]
-[assembly: AssemblyFileVersion("0.3.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

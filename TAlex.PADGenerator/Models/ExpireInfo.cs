@@ -57,5 +57,17 @@ namespace TAlex.PADGenerator.Models
         [XmlElement(ElementName = "Expire_Year")]
         [RegularExpression(Patterns.OptionalYear)]
         public string ExpireYear { get; set; }
+
+
+        public ExpireInfo()
+        {
+            HasExpireInfo = String.Empty;
+            ExpireCount = String.Empty;
+            ExpireBasedOn = String.Empty;
+            ExpireOtherInfo = String.Empty;
+            ExpireMonth = String.Empty;
+            ExpireDay = String.Empty;
+            ExpireYear = String.Empty;
+        }
     }
 }
