@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicPADGeneratorTests.cs" />
+    <Compile Include="Models\FileInfoTests.cs" />
+    <Compile Include="Models\ProgramInfoTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -38,5 +38,13 @@ namespace TAlex.PADGenerator.Models
             FileSizeKilobytes = String.Empty;
             FileSizeMegabytes = String.Empty;
         }
+
+
+        public void SetFileSize(int sizeInBytes)
+        {
+            FileSizeBytes = sizeInBytes.ToString();
+            FileSizeKilobytes = (sizeInBytes / 1024).ToString();
+            FileSizeMegabytes = Math.Round(sizeInBytes / 1048576.0, 2).ToString();
+        }
     }
 }

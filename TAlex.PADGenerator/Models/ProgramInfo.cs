@@ -365,5 +365,13 @@ namespace TAlex.PADGenerator.Models
             SpecificCategory = String.Empty;
             SystemRequirements = String.Empty;
         }
+
+
+        public void SetReleaseDate(DateTime date)
+        {
+            ReleaseDay = date.Day.ToString("D2");
+            ReleaseMonth = date.Month.ToString("D2");
+            ReleaseYear = date.Year.ToString("D2");
+        }
     }
 }
