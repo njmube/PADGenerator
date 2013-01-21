@@ -5,6 +5,9 @@ using System.Xml.Serialization;
 
 namespace TAlex.PADGenerator.Models
 {
+    /// <summary>
+    /// Represents the root XML_DIZ_INFO section in PAD file.
+    /// </summary>
     [XmlRoot(ElementName = "XML_DIZ_INFO")]
     public class PADRoot
     {

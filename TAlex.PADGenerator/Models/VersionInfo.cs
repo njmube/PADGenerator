@@ -6,6 +6,9 @@ using System.Xml.Serialization;
 
 namespace TAlex.PADGenerator.Models
 {
+    /// <summary>
+    /// Represents the XML_DIZ_INFO/MASTER_PAD_VERSION_INFO section in PAD file.
+    /// </summary>
     public class VersionInfo
     {
         /// <summary>

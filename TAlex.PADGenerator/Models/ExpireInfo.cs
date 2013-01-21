@@ -5,6 +5,9 @@ using System.Xml.Serialization;
 
 namespace TAlex.PADGenerator.Models
 {
+    /// <summary>
+    /// Represents the XML_DIZ_INFO/Program_Info/Expire_Info section in PAD file.
+    /// </summary>
     public class ExpireInfo
     {
         /// <summary>

@@ -5,6 +5,9 @@ using System.Xml.Serialization;
 
 namespace TAlex.PADGenerator.Models
 {
+    /// <summary>
+    /// Represents the XML_DIZ_INFO/Permissions section in PAD file.
+    /// </summary>
     public class Permissions
     {
         /// <summary>

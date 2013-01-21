@@ -5,6 +5,9 @@ using System.Xml.Serialization;
 
 namespace TAlex.PADGenerator.Models
 {
+    /// <summary>
+    /// Represents the XML_DIZ_INFO/Web_Info/Download_URLs section in PAD file.
+    /// </summary>
     public class DownloadURLs
     {
         private const string DownloadUrlPattern = @"^(http|ftp):\/\/.{2,120}\.(air|apk|app|bin|com|exe|dmg|hqx|gz|gzip|jar|msi|rar|sea|sh|sis|sit|sitx|tar|taz|tgx|tgz|uu|z|zip)$";

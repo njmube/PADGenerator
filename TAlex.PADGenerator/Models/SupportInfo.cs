@@ -4,6 +4,9 @@ using System.Xml.Serialization;
 
 namespace TAlex.PADGenerator.Models
 {
+    /// <summary>
+    /// Represents the XML_DIZ_INFO/Company_Info/Support_Info section in PAD file.
+    /// </summary>
     public class SupportInfo
     {
         /// <summary>

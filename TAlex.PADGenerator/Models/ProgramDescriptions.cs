@@ -8,6 +8,9 @@ using System.Xml.Serialization;
 
 namespace TAlex.PADGenerator.Models
 {
+    /// <summary>
+    /// Represents the XML_DIZ_INFO/Program_Descriptions section in PAD file.
+    /// </summary>
     public class ProgramDescriptions : IXmlSerializable
     {
         private XmlSerializer _serializer = new XmlSerializer(typeof(ProgramDescription));

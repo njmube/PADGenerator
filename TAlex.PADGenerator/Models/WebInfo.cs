@@ -4,6 +4,9 @@ using System.Xml.Serialization;
 
 namespace TAlex.PADGenerator.Models
 {
+    /// <summary>
+    /// Represents the XML_DIZ_INFO/Web_Info section in PAD file.
+    /// </summary>
     public class WebInfo
     {
         [XmlElement(ElementName = "Application_URLs")]
