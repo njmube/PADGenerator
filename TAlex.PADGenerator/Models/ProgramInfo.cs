@@ -343,6 +343,10 @@ namespace TAlex.PADGenerator.Models
         [StringLength(100, MinimumLength = 0)]
         public string SystemRequirements { get; set; }
 
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.ProgramInfo"/> class.
+        /// </summary>
         public ProgramInfo()
         {
             ProgramName = String.Empty;
@@ -367,11 +371,15 @@ namespace TAlex.PADGenerator.Models
         }
 
 
+        #region Helpers
+
         public void SetReleaseDate(DateTime date)
         {
             ReleaseDay = date.Day.ToString("D2");
             ReleaseMonth = date.Month.ToString("D2");
             ReleaseYear = date.Year.ToString("D2");
         }
+
+        #endregion
     }
 }

@@ -54,6 +54,9 @@ namespace TAlex.PADGenerator.Models
         public string ContactEmail { get; set; }
 
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.ContactInfo"/> class.
+        /// </summary>
         public ContactInfo()
         {
             AuthorFirstName = String.Empty;

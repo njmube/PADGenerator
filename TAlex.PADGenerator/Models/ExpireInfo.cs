@@ -59,6 +59,9 @@ namespace TAlex.PADGenerator.Models
         public string ExpireYear { get; set; }
 
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.ExpireInfo"/> class.
+        /// </summary>
         public ExpireInfo()
         {
             HasExpireInfo = String.Empty;

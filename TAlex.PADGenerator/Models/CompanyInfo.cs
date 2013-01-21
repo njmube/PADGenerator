@@ -77,6 +77,10 @@ namespace TAlex.PADGenerator.Models
         [XmlElement(ElementName = "Support_Info")]
         public SupportInfo SupportInfo { get; set; }
 
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.CompanyInfo"/> class.
+        /// </summary>
         public CompanyInfo()
         {
             Name = String.Empty;

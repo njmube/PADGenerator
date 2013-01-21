@@ -56,6 +56,9 @@ namespace TAlex.PADGenerator.Models
         public string FaxPhone { get; set; }
 
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.SupportInfo"/> class.
+        /// </summary>
         public SupportInfo()
         {
             SalesEmail = String.Empty;

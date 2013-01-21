@@ -17,6 +17,9 @@ namespace TAlex.PADGenerator
         private XmlWriterSettings _xmlSettings;
 
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.BasicPADGenerator"/> class.
+        /// </summary>
         public BasicPADGenerator()
         {
             _namespaces = new XmlSerializerNamespaces();

@@ -24,6 +24,9 @@ namespace TAlex.PADGenerator.Models
         public string EULA { get; set; }
 
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.Permissions"/> class.
+        /// </summary>
         public Permissions()
         {
             DistributionPermissions = String.Empty;

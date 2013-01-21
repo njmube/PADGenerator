@@ -27,6 +27,9 @@ namespace TAlex.PADGenerator.Models
         public Permissions Permissions { get; set; }
 
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.PADRoot"/> class.
+        /// </summary>
         public PADRoot()
         {
             VersionInfo = new VersionInfo();

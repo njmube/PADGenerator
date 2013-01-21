@@ -38,6 +38,9 @@ namespace TAlex.PADGenerator.Models
         public string SecondAdditionalDownloadUrl { get; set; }
 
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.DownloadURLs"/> class.
+        /// </summary>
         public DownloadURLs()
         {
             PrimaryDownloadUrl = String.Empty;

@@ -43,6 +43,9 @@ namespace TAlex.PADGenerator.Models
         public string XmlFileUrl { get; set; }
 
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.ApplicationURLs"/> class.
+        /// </summary>
         public ApplicationURLs()
         {
             InfoUrl = String.Empty;

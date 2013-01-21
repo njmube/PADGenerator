@@ -14,6 +14,9 @@ namespace TAlex.PADGenerator.Models
 
         public Dictionary<string, ProgramDescription> Descriptions { get; private set; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.ProgramDescriptions"/> class.
+        /// </summary>
         public ProgramDescriptions()
         {
             Descriptions = new Dictionary<string, ProgramDescription>();

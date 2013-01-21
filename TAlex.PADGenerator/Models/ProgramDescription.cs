@@ -56,6 +56,9 @@ namespace TAlex.PADGenerator.Models
         public string Description2000 { get; set; }
 
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.ProgramDescription"/> class.
+        /// </summary>
         public ProgramDescription()
         {
             Keywords = String.Empty;

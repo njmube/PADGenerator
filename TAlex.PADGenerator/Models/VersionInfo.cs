@@ -32,6 +32,9 @@ namespace TAlex.PADGenerator.Models
         public string Info { get; set; }
 
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.VersionInfo"/> class.
+        /// </summary>
         public VersionInfo()
         {
             Version = "4.0";

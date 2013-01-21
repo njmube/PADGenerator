@@ -12,6 +12,10 @@ namespace TAlex.PADGenerator.Models
         [XmlElement(ElementName = "Download_URLs")]
         public DownloadURLs DownloadURLs { get; set; }
 
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.WebInfo"/> class.
+        /// </summary>
         public WebInfo()
         {
             ApplicationURLs = new ApplicationURLs();
