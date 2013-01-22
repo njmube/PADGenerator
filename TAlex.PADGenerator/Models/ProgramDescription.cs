@@ -5,6 +5,9 @@ using System.Xml.Serialization;
 
 namespace TAlex.PADGenerator.Models
 {
+    /// <summary>
+    /// Represents the language specific program descriptions section in PAD file.
+    /// </summary>
     public class ProgramDescription
     {
         /// <summary>
