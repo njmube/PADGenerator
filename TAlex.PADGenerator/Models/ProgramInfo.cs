@@ -143,9 +143,15 @@ namespace TAlex.PADGenerator.Models
             "Welsh|Wolof|Xhosa|Yiddish|Yoruba|Zulu|,)+$")]
         public string Languages { get; set; }
 
+        /// <summary>
+        /// Gets or sets the file info section of PAD file.
+        /// </summary>
         [XmlElement(ElementName = "File_Info")]
         public FileInfo FileInfo { get; set; }
 
+        /// <summary>
+        /// Gets or sets the expire info section of PAD file.
+        /// </summary>
         [XmlElement(ElementName = "Expire_Info")]
         public ExpireInfo ExpireInfo { get; set; }
 
@@ -376,6 +382,10 @@ namespace TAlex.PADGenerator.Models
 
         #region Helpers
 
+        /// <summary>
+        /// Sets the release date (day, month, year) of the program.
+        /// </summary>
+        /// <param name="date">The <see cref="System.DateTime"/> object that represents the release date.</param>
         public void SetReleaseDate(DateTime date)
         {
             ReleaseDay = date.Day.ToString("D2");

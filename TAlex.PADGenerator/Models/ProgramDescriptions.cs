@@ -33,16 +33,28 @@ namespace TAlex.PADGenerator.Models
 
         #region IXmlSerializable Members
 
+        /// <summary>
+        /// This method is reserved and should not be used.
+        /// </summary>
+        /// <returns>null.</returns>
         public XmlSchema GetSchema()
         {
-            throw new NotImplementedException();
+            return null;
         }
 
+        /// <summary>
+        /// Generates an object from its XML representation. Currently is not implementing.
+        /// </summary>
+        /// <param name="reader">The <see cref="System.Xml.XmlReader"/> stream from which the object is deserialized.</param>
         public void ReadXml(XmlReader reader)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Converts an object into its XML representation.
+        /// </summary>
+        /// <param name="writer">The <see cref="System.Xml.XmlWriter"/> stream to which the object is serialized.</param>
         public void WriteXml(XmlWriter writer)
         {
             XmlDocument elementDoc = new XmlDocument();

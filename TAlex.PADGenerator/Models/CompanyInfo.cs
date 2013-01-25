@@ -74,9 +74,15 @@ namespace TAlex.PADGenerator.Models
         [StringLength(120, MinimumLength = 2)]
         public string WebSiteUrl { get; set; }
 
+        /// <summary>
+        /// Gets or sets the contact info section of PAD file.
+        /// </summary>
         [XmlElement(ElementName = "Contact_Info")]
         public ContactInfo ContactInfo { get; set; }
 
+        /// <summary>
+        /// Gets or sets the support info section of PAD file.
+        /// </summary>
         [XmlElement(ElementName = "Support_Info")]
         public SupportInfo SupportInfo { get; set; }
 

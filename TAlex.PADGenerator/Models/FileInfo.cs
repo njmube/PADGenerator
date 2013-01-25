@@ -47,6 +47,10 @@ namespace TAlex.PADGenerator.Models
 
         #region Helpers
 
+        /// <summary>
+        /// Sets the file size (bytes, kilobytes and megabytes) of the distribution file.
+        /// </summary>
+        /// <param name="sizeInBytes">An <see cref="System.Int32"/> integer that represents the file size in bytes.</param>
         public void SetFileSize(int sizeInBytes)
         {
             FileSizeBytes = sizeInBytes.ToString();
