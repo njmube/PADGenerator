@@ -15,6 +15,9 @@ namespace TAlex.PADGenerator.Models
     {
         private XmlSerializer _serializer = new XmlSerializer(typeof(ProgramDescription));
 
+        /// <summary>
+        /// Gets the dictionary with program descriptions for differents languages.
+        /// </summary>
         public Dictionary<string, ProgramDescription> Descriptions { get; private set; }
 
         /// <summary>
@@ -25,7 +28,11 @@ namespace TAlex.PADGenerator.Models
             Descriptions = new Dictionary<string, ProgramDescription>();
         }
 
-
+        /// <summary>
+        /// Adds the program description with the specified language to the dictionary.
+        /// </summary>
+        /// <param name="language">A <see cref="System.String"/> that represents the language of program description.</param>
+        /// <param name="description">A <see cref="TAlex.PADGenerator.Models.ProgramDescription"/> that represents the program description.</param>
         public void Add(string language, ProgramDescription description)
         {
             Descriptions.Add(language, description);

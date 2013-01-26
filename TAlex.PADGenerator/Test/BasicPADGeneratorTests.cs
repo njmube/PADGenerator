@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using TAlex.PADGenerator.Models;
 using FluentAssertions;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace TAlex.PADGenerator.Test
@@ -54,6 +55,34 @@ namespace TAlex.PADGenerator.Test
 
             // assert
             text.Should().NotBeEmpty();
+        }
+
+        [Test]
+        public void Generate_Throw_ValidationException()
+        {
+            //arrange
+            PADRoot root = new PADRoot();
+            root.ProgramDescriptions.Add("English", new ProgramDescription());
+
+            root.CompanyInfo.City = "San Francisco";
+            root.CompanyInfo.Country = "USA";
+            root.CompanyInfo.WebSiteUrl = "http://www.talex-soft.com";
+            root.CompanyInfo.ContactInfo.AuthorFirstName = "Firstname";
+            root.CompanyInfo.ContactInfo.AuthorLastName = "Lastname";
+            root.CompanyInfo.ContactInfo.ContactFirstName = "Firstname";
+            root.CompanyInfo.ContactInfo.ContactLastName = "Lastname";
+            root.ProgramInfo.ProgramName = "Cool Program";
+            root.ProgramInfo.Version = "2.0";
+            root.ProgramInfo.SetReleaseDate(new DateTime(2013, 1, 3));
+            root.ProgramInfo.Category = "Desktop::Screen Savers: Science";
+            root.ProgramInfo.FileInfo.SetFileSize(3645785);
+
+            //action
+            Action action = () => { _generator.Generate(root, _outputStream); };
+            
+            // assert
+            action.ShouldThrow<ValidationException>()
+                .WithMessage("The field Name must be a string with a minimum length of 2 and a maximum length of 40.");
         }
     }
 }
