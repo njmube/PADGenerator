@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TAlex.PADGenerator")]
-[assembly: AssemblyDescription("PAD File Generator Library")]
+[assembly: AssemblyDescription("PAD file generator library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("T-Alex Software")]
 [assembly: AssemblyProduct("TAlex.PADGenerator")]
-[assembly: AssemblyCopyright("Copyright © 2013 T-Alex Software")]
+[assembly: AssemblyCopyright("Copyright © 2015 T-Alex Software")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

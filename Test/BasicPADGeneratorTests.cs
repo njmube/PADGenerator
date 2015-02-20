@@ -27,6 +27,8 @@ namespace TAlex.PADGenerator.Test
             _outputStreamReader = new StreamReader(_outputStream);
         }
 
+        #region Generate
+
         [Test]
         public void Generate_Success()
         {
@@ -84,5 +86,7 @@ namespace TAlex.PADGenerator.Test
             action.ShouldThrow<ValidationException>()
                 .WithMessage("The field Name must be a string with a minimum length of 2 and a maximum length of 40.");
         }
+
+        #endregion
     }
 }

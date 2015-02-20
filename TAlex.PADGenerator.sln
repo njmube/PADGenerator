@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAlex.PADGenerator", "TAlex.PADGenerator\TAlex.PADGenerator.csproj", "{E12C3C81-3449-4E45-A6F1-84CB29D07A13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAlex.PADGenerator.Test", "TAlex.PADGenerator\Test\TAlex.PADGenerator.Test.csproj", "{326D73D4-6D78-4BBA-93D8-33CB90F29EEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAlex.PADGenerator.Tests", "Test\TAlex.PADGenerator.Tests.csproj", "{326D73D4-6D78-4BBA-93D8-33CB90F29EEB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7F4D673F-CE7D-4F15-BFAF-EA404AFF7593}"
 EndProject

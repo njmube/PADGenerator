@@ -52,7 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TAlex.PADGenerator.csproj">
+    <ProjectReference Include="..\TAlex.PADGenerator\TAlex.PADGenerator.csproj">
       <Project>{e12c3c81-3449-4e45-a6f1-84cb29d07a13}</Project>
       <Name>TAlex.PADGenerator</Name>
     </ProjectReference>
