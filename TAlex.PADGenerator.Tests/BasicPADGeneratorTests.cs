@@ -14,7 +14,7 @@ namespace TAlex.PADGenerator.Test
     [TestFixture]
     public class BasicPADGeneratorTests
     {
-        private IPADGenerator _generator;
+        protected IPADGenerator Target;
         private Stream _outputStream;
         private StreamReader _outputStreamReader;
 
@@ -22,7 +22,7 @@ namespace TAlex.PADGenerator.Test
         [SetUp]
         public void SetUp()
         {
-            _generator = new BasicPADGenerator();
+            Target = new BasicPADGenerator();
             _outputStream = new MemoryStream();
             _outputStreamReader = new StreamReader(_outputStream);
         }
@@ -30,7 +30,7 @@ namespace TAlex.PADGenerator.Test
         #region Generate
 
         [Test]
-        public void Generate_Success()
+        public void Generate_PADModel_SuccessResult()
         {
             //arrange
             PADRoot root = new PADRoot();
@@ -51,7 +51,7 @@ namespace TAlex.PADGenerator.Test
             root.ProgramInfo.FileInfo.SetFileSize(3645785);
 
             //action
-            _generator.Generate(root, _outputStream);
+            Target.Generate(root, _outputStream);
             _outputStream.Seek(0, SeekOrigin.Begin);
             string text = _outputStreamReader.ReadToEnd();
 
@@ -60,7 +60,7 @@ namespace TAlex.PADGenerator.Test
         }
 
         [Test]
-        public void Generate_Throw_ValidationException()
+        public void Generate_PADModel_ThrowValidationException()
         {
             //arrange
             PADRoot root = new PADRoot();
@@ -80,7 +80,7 @@ namespace TAlex.PADGenerator.Test
             root.ProgramInfo.FileInfo.SetFileSize(3645785);
 
             //action
-            Action action = () => { _generator.Generate(root, _outputStream); };
+            Action action = () => { Target.Generate(root, _outputStream); };
             
             // assert
             action.ShouldThrow<ValidationException>()
