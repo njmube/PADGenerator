@@ -1,7 +1,7 @@
-# PAD (Portable Application Description) Generator
+# PAD Generator
 [![NuGet Version](http://img.shields.io/nuget/v/TAlex.PADGenerator.svg?style=flat)](https://www.nuget.org/packages/TAlex.PADGenerator/) [![NuGet Downloads](http://img.shields.io/nuget/dt/TAlex.PADGenerator.svg?style=flat)](https://www.nuget.org/packages/TAlex.PADGenerator/)
 
-PAD file generator library.
+PAD (portable application description) file generator library.
 
 ## Example of usage
 Here is example of typical using of library:
