@@ -7,7 +7,7 @@ using TAlex.PADGenerator.Models;
 using FluentAssertions;
 
 
-namespace TAlex.PADGenerator.Test.Models
+namespace TAlex.PADGenerator.Tests.Models
 {
     [TestFixture]
     public class ProgramInfoTests

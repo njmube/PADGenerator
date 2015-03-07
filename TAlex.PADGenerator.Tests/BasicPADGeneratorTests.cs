@@ -9,7 +9,7 @@ using FluentAssertions;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace TAlex.PADGenerator.Test
+namespace TAlex.PADGenerator.Tests
 {
     [TestFixture]
     public class BasicPADGeneratorTests
