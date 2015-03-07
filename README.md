@@ -1,4 +1,5 @@
 # PAD Generator
+[![Build status](https://ci.appveyor.com/api/projects/status/71llytbdjtbaqup4?svg=true)](https://ci.appveyor.com/project/T-Alex/padgenerator)
 [![NuGet Version](http://img.shields.io/nuget/v/TAlex.PADGenerator.svg?style=flat)](https://www.nuget.org/packages/TAlex.PADGenerator/) [![NuGet Downloads](http://img.shields.io/nuget/dt/TAlex.PADGenerator.svg?style=flat)](https://www.nuget.org/packages/TAlex.PADGenerator/)
 
 PAD (portable application description) file generator library.
@@ -134,4 +135,4 @@ Output:
     Install-Package TAlex.PADGenerator
 
 ## License
-TAlex.PADGenerator is under the [MIT license](https://github.com/T-Alex/PADGenerator/blob/master/LICENSE.md).
+TAlex.PADGenerator is under the [MIT license](LICENSE.md).
