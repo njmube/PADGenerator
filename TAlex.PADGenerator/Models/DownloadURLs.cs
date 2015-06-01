@@ -10,7 +10,7 @@ namespace TAlex.PADGenerator.Models
     /// </summary>
     public class DownloadURLs
     {
-        private const string DownloadUrlPattern = @"^(http|ftp):\/\/.{2,120}\.(air|apk|app|bin|com|exe|dmg|hqx|gz|gzip|jar|msi|rar|sea|sh|sis|sit|sitx|tar|taz|tgx|tgz|uu|z|zip|gadget)$";
+        private const string DownloadUrlPattern = @"^(http|ftp):\/\/.{2,120}\.(air|apk|app|bin|com|exe|dmg|hqx|gz|gzip|jar|msi|rar|sea|sh|sis|sit|sitx|tar|taz|tgx|tgz|uu|z|zip|gadget|application)$";
 
         /// <summary>
         /// Gets or sets the primary download URL where customers can download the program.
