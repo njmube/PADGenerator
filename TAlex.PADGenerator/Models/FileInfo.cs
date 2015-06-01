@@ -34,14 +34,15 @@ namespace TAlex.PADGenerator.Models
         [StringLength(8, MinimumLength = 1)]
         public string FileSizeMegabytes { get; set; }
 
+
         /// <summary>
         /// Initializes a new instance of the <see cref="TAlex.PADGenerator.Models.FileInfo"/> class.
         /// </summary>
         public FileInfo()
         {
-            FileSizeBytes = String.Empty;
-            FileSizeKilobytes = String.Empty;
-            FileSizeMegabytes = String.Empty;
+            FileSizeBytes = "000";
+            FileSizeKilobytes = "0";
+            FileSizeMegabytes = "0";
         }
 
 
