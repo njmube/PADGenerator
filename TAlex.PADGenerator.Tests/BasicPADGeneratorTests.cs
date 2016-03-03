@@ -49,6 +49,7 @@ namespace TAlex.PADGenerator.Tests
             root.ProgramInfo.SetReleaseDate(new DateTime(2013, 1, 3));
             root.ProgramInfo.Category = "Desktop::Screen Savers: Science";
             root.ProgramInfo.FileInfo.SetFileSize(3645785);
+            root.WebInfo.ApplicationURLs.ScreenshotUrl = "https://some-domain.com/some-image.here.png";
 
             //action
             Target.Generate(root, _outputStream);
