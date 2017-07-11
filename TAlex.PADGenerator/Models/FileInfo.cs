@@ -54,7 +54,7 @@ namespace TAlex.PADGenerator.Models
         /// <param name="sizeInBytes">An <see cref="System.Int32"/> integer that represents the file size in bytes.</param>
         public void SetFileSize(int sizeInBytes)
         {
-            FileSizeBytes = sizeInBytes.ToString();
+            FileSizeBytes = sizeInBytes.ToString("D3");
             FileSizeKilobytes = (sizeInBytes / 1024).ToString();
             FileSizeMegabytes = Math.Round(sizeInBytes / 1048576.0, 2).ToString();
         }
