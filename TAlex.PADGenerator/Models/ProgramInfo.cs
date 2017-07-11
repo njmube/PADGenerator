@@ -108,14 +108,6 @@ namespace TAlex.PADGenerator.Models
         /// Gets or sets the operating systems supported by the program.
         /// </summary>
         [XmlElement(ElementName = "Program_OS_Support")]
-        [RegularExpression(
-            @"^((Android|BlackBerry|Handheld\/Mobile Other|" +
-            "iPhone|iPod|iTouch|Java|Linux|Linux Console|Linux Gnome|" +
-            "Linux GPL|Linux Open Source|Mac OS X|Mac Other|" +
-            "MS-DOS|Netware|OpenVMS|Palm|Pocket PC|" +
-            "Symbian|Unix|Win2000|Win7 x32|Win7 x64|" +
-            "Win98|WinMobile|WinOther|WinServer|WinVista|WinVista x64|" +
-            "WinXP|Other|Not Applicable)[, ]*)+$")]
         public string OperatingSystems { get; set; }
 
         /// <summary>
