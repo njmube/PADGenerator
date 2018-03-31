@@ -1,9 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using TAlex.PADGenerator.Models;
 using FluentAssertions;
 using System.ComponentModel.DataAnnotations;
@@ -84,7 +81,7 @@ namespace TAlex.PADGenerator.Tests
             Action action = () => { Target.Generate(root, _outputStream); };
             
             // assert
-            action.ShouldThrow<ValidationException>()
+            action.Should().Throw<ValidationException>()
                 .WithMessage("The field Name must be a string with a minimum length of 2 and a maximum length of 40.");
         }
 

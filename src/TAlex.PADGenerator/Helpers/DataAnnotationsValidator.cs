@@ -11,7 +11,7 @@ namespace TAlex.PADGenerator.Helpers
 {
     /// <summary>
     /// Defines a helper class that can be used to validate objects when it is included in their
-    /// associated <see cref="System.ComponentModel.DataAnnotations.ValidationAttribute"/> attributes.
+    /// associated <see cref="ValidationAttribute"/> attributes.
     /// </summary>
     public static class DataAnnotationsValidator
     {

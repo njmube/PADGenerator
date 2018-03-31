@@ -54,6 +54,9 @@ _ReSharper*/
 [Nn]u[Gg]et.exe
 packages/
 
+#Visual Studio
+.vs/
+
 #ncrunch
 *ncrunch*
 *crunch*.local.xml
