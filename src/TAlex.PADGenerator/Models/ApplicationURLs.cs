@@ -35,7 +35,7 @@ namespace TAlex.PADGenerator.Models
         /// Gets or sets the url used to access the icon image (32x32 pixels) used for the program.
         /// </summary>
         [XmlElement(ElementName = "Application_Icon_URL")]
-        [RegularExpression(@"^https?:\/\/.{2,120}\.(gif|jpg|png)$")]
+        [RegularExpression(@"^$|^https?:\/\/.{2,120}\.(gif|jpg|png)$")]
         public string IconUrl { get; set; }
 
         /// <summary>
